@@ -1,5 +1,5 @@
 export default (state = {
-    alumnis:
+    alumnus:
         [{
             'name': 'testing1',
             'yearGraduated': 2019,
@@ -8,9 +8,13 @@ export default (state = {
             'currentlyLiving': 'testing city',
             'hobbies': 'sleep'
         }]
-},action) => {
+},
+    action) => {
     switch (action.type) {
+
+
         default:
             return state
     }
 }
+
