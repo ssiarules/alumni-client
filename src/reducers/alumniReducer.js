@@ -1,3 +1,34 @@
+
+import { FETCH_ALUMNUS,NEW_ALUMNI } from '../actions/types';
+
+const initialState = {
+    alumnus: [],
+    alumni: {}
+}
+
+export default function(state = initialState,action) {
+    switch (action.type) {
+        case FETCH_ALUMNUS:
+            return {
+                ...state,
+                alumnus: action.payload
+            };
+        case NEW_ALUMNI:
+            return {
+                ...state,
+                alumni: action.paylod
+            };
+        default:
+            return state;
+    }
+}
+
+
+
+
+
+
+/*
 export default (state = {
     alumnus:
         [{
@@ -23,4 +54,5 @@ export default (state = {
             return state
     }
 }
+*/
 
